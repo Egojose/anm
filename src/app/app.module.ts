@@ -11,7 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { TablaCompraComponent } from './components/tabla-compra/tabla-compra.component';
 import { FormularioDosComponent } from './components/formulario-dos/formulario-dos.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
-import { FinProcesoComponent } from './components/fin-proceso/fin-proceso.component'
+import { FinProcesoComponent } from './components/fin-proceso/fin-proceso.component';
+import { TablaSaldosComponent } from './components/tabla-saldos/tabla-saldos.component'
 
 
 
@@ -23,7 +24,8 @@ import { FinProcesoComponent } from './components/fin-proceso/fin-proceso.compon
     FormularioComponent,
     TablaCompraComponent,
     FormularioDosComponent,
-    FinProcesoComponent
+    FinProcesoComponent,
+    TablaSaldosComponent
   ],
   imports: [
     BrowserModule,

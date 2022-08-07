@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Saldos
+        </div>
+        <div class="card-content">
+            <br>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <button type="button" class="btn btn-primary" (click)="habilitarCargaArchivos()">Actualizar saldos</button>
+                </div>
+            </div>
+            <br>
+            <ng-container *ngIf="cargarArchivos">
+            <div class="row" style="margin-left: 5px;">
+                <div class="col-md-8">
+                    <input type="file" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-default">Cargar</button>
+                </div>
+            </div>
+            <br>
+            </ng-container>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Transacción</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Saldo inicial</th>
+                        <th scope="col">Saldo en la app</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
