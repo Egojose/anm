@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Validación
+        </div>
+        <div class="card-body">
+            <alert type="danger">
+                <strong>Algo salió mal!</strong> Por favor verifique su código e intente nuevamente
+              </alert>
+              <alert type="success">
+                <strong>Bien hecho!</strong> El código se ha validado correctamente.
+            </alert>
+            <div class="row">
+                <div class="col-md-8">
+                    <label>Código de validación</label>
+                    <input type="text" class="form-control" [(ngModel)]="codigo">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" style="margin-top: 30px;" [disabled]="!codigo">Enviar</button>
+                </div>
+            </div>
+            <br>
+            <a routerLink="/finalizacion"><button type="button" class="btn btn-success">Siguente</button></a>
+        </div>
+    </div>
+</div>

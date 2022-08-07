@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Registro de compras
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <label>Documento</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Mineral</label>
+                    <select name="" id="" class="form-control" [(ngModel)]="mineral">
+                        <option *ngFor="let item of minerales">
+                            {{item}}
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label>Cantidad</label>
+                    <input type="text" class="form-control" [(ngModel)]="cantidad">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary" style="margin-top: 30px;" [disabled]="!mineral && !cantidad" (click)="agregar()">Agregar</button>
+                </div>
+            </div>
+            <br>
+            <ng-container *ngIf="compraArr.length > 0">
+                <app-tabla-compra [data]="compraArr"></app-tabla-compra>
+            </ng-container>
+            <a routerLink="/validacion"><button type="button" class="btn btn-success">Siguiente</button></a>
+        </div>
+      </div>
+    
+</div>
